@@ -74,3 +74,8 @@ Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del
 <img src="https://github.com/marcosRoos/OO-Study/blob/main/diamond-problem.png"/>
 </p>
   
+  
+## About Polymorphism
+  Inheriting from a parent class does not mean you are stuck with its handling, you can adapt <del>and overcome</del> a good part of it. There is 
+  no problem with rewriting a method with a different handling, parameters and return type, actually it has a name: <ins>OVERRIDING</ins>.
+  Okay, so i can resignificate methods on child classes, but what if i want a method to accept different types of parameters ? you can! that is <ins>OVERLOADING</ins>.
