@@ -68,7 +68,7 @@ Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del
 
 ## About Inheritance
   In java a child class can only have one parent, but in c++ you can have a child with two parents, it is called multiple inheritance, and comes with some dilemas. The most popular dilema is the diamond problem. 
-<br/>e.g.: an class A has two child classes, class B and class C, both overrides a class a method, then you create a class D, which inherits from both class B and class C, but you have two different methods with the same name, how will the program handle that ? this dilema <del>causes problems</del> is handled diferently by each language, that is the reason why java does not support multiple inheritance.
+<br/>e.g.: an Root Class has two child classes, Class A and Class B, both overrides a class a method, then you create a Resultant Class, which inherits from both Class A and Class B, but you have two different methods with the same name, how will the program handle that ? this dilema <del>causes problems</del> is handled diferently by each language, that is the reason why java does not support multiple inheritance.
 
 <p align="center">
 <img src="https://github.com/marcosRoos/OO-Study/blob/main/diamond-problem.png"/>
