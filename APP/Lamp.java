@@ -16,7 +16,7 @@ public class Lamp {
         return this.isOn;
     }
 
-    public void testar() {
+    public void test() {
         System.out.println("\n\nStarting tests..");
         System.out.println("Beggining state of the lamp: " + (getisOn() ? "on" : "off"));
         System.out.print("How much times ou want to toggle: ");
