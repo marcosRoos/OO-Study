@@ -45,3 +45,22 @@ Now we can learn the fundaments of OOP ( or Programação Orientada a Objetos in
 </table>
 
 Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del>four horsemen of apocalypse</del> four fundaments of Object Oriented Programming.
+
+## About Encapsulation
+  To achieve encapsulation, we need to control the acess scope of variables and methods, we have some tools to do so:
+  <ul>
+    <li>Acess level modifiers
+      <ul>
+        <li>PUBLIC: can be acessed by any method from any class, as the name suggest it is public to everyones acess.</li>
+        <li>PROTECTED: can be acessed only by its native class and its childs, but no other classes/objects.</li>
+        <li>PRIVATE: can only be acessed by its native class and no one else, not even by its child classes.</li>
+      </ul>
+    </li>
+    <li>Acess methods
+      <ul>
+        <li>SET: set is a public method that receives a parameter and pass it to a private or protected variable.</li>
+        <li>GET: get is a public method that returns the value of a private variable.</li>
+        -The path to maintain the protection of data is to be cautelous when to use those methods.
+      </ul>
+    </li>
+  </ul>
