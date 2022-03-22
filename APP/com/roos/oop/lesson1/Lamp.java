@@ -1,3 +1,4 @@
+package com.roos.oop.lesson1;
 import java.util.Scanner;
 
 public class Lamp {
