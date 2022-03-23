@@ -146,7 +146,7 @@ hello world from someone![B]
 As you can see, the parent class type does accept the childs instance.
 Java 8 let's you insert a child that have more methods than its parent on the parent, but you would not be able to call those methods.
 
-##Relationships
+## Relationships
 Relations one-to-one, one-to-many an many-to-many is used on databases to relate data of different classes trough the id key, for example, you can relate a client of yours with n contacts of his (cellphone, enterprise phone, email, etc..), or an ifood account with multiple adresses for example. If you need to find the contacts of a client trough the clients name, then you put the contact id key in a client class variable.
 On java 8 this is a bit different, the object of contact would be directly referenced on client class variable.
 
