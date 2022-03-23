@@ -72,7 +72,7 @@ Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del
 
 <br/>
 <p align="center">
-  <img src="https://github.com/marcosRoos/OO-Study/blob/main/diamond-problem.png"/>
+  <img src="https://github.com/marcosRoos/OO-Study/blob/main/diamond-problem.png" title="diamond problem example"/>
 </p>
   
   
@@ -152,5 +152,5 @@ On java 8 this is a bit different, the object of contact would be directly refer
 
 <br/>
 <p align=center>
-  <img src="https://github.com/marcosRoos/OO-Study/blob/main/relation.png"/>
+  <img src="https://github.com/marcosRoos/OO-Study/blob/main/relation.png" title="Relation example"/>
 </p>
