@@ -64,3 +64,18 @@ Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del
       </ul>
     </li>
   </ul>
+
+
+## About Inheritance
+  In java a child class can only have one parent, but in c++ you can have a child with two parents, it is called multiple inheritance, and comes with some dilemas. The most popular dilema is the diamond problem. 
+<br/>e.g.: an Root Class has two child classes, Class A and Class B, both overrides a Root Class method, then you create a Resultant Class, which inherits from both Class A and Class B, but you have two different methods with the same name, how will the program handle that ? this dilema <del>causes problems</del> is handled diferently by each language, that is the reason why java does not support multiple inheritance.
+
+<p align="center">
+<img src="https://github.com/marcosRoos/OO-Study/blob/main/diamond-problem.png"/>
+</p>
+  
+  
+## About Polymorphism
+  Inheriting from a parent class does not mean you are stuck with its handling, you can adapt <del>and overcome</del> a good part of it. There is 
+  no problem with rewriting a method with a different handling, parameters and return type, actually it has a name: <ins>OVERRIDING</ins>.
+  Okay, so i can resignificate methods on child classes, but what if i want a method to accept different types of parameters ? you can! that is <ins>OVERLOADING</ins>.
