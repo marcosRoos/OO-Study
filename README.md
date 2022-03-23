@@ -79,3 +79,68 @@ Togheter abstraction, encapsulation, inheritance and polymorphism forms the <del
   Inheriting from a parent class does not mean you are stuck with its handling, you can adapt <del>and overcome</del> a good part of it. There is 
   no problem with rewriting a method with a different handling, parameters and return type, actually it has a name: <ins>OVERRIDING</ins>.
   Okay, so i can resignificate methods on child classes, but what if i want a method to accept different types of parameters ? you can! that is <ins>OVERLOADING</ins>.
+
+<br/><hr/><br/>
+
+## Getting a little more complex
+Okay, until here we can create classes, protect their data, inherit their relevant characteristics to other classes and adapt their methods. But, what if i want to receive any of the child classes ? one option is to use the parent class as the variable type, but you will be limited to its methods. So, if you need more specific methods on the childs, but the parent class will not be used, you can use an <ins>ABSTRACT CLASS</ins>.
+
+<br/><br/> e.g. in java: 
+
+```
+public abstract class Parent {
+  private String name;
+
+  public Parent() {}
+  public Parent(String name) {
+    this.name = name;
+  }
+  public void doSomething() {}
+}
+
+
+public class ChildA extends parent {
+  public ChildA() {
+    super("no one");
+  }
+  public ChildA(String name) {
+    super(name);
+  }
+  public void doSomething() {
+    System.out.println("hello world from " + name + "![A]");
+  }
+}
+
+
+public class ChildB extends parent {
+  public ChildB() {
+    super("someone");
+  }
+  public ChildB(String name) {
+    super(name);
+  }
+  public void doSomething() {
+    System.out.println("hello world from " + name + "![B]");
+  }
+}
+
+public class app {
+  public static void main(String[] args) {
+    //Parent parent = new Parent("John"); Abstract classes can't be instantiated!
+    Parent childA = new ChildA();
+    Parent childB = new ChildB();
+
+    childA.doSomething();
+    childB.doSomething();
+  }
+}
+
+```
+it would return:
+```
+hello world from no one![A]
+hello world from someone![B]
+
+```
+As you can see, the parent class type does accept the childs instance.
+Java 8 let's you insert a child that have more methods than explicited on the parent, but you would not be able to call those methods.
