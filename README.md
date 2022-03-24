@@ -148,9 +148,54 @@ Java 8 let's you insert a child that have more methods than its parent on the pa
 
 ## Relationships
 Relations one-to-one, one-to-many an many-to-many is used on databases to relate data of different classes trough the id key, for example, you can relate a client of yours with n contacts of his (cellphone, enterprise phone, email, etc..), or an ifood account with multiple adresses for example. If you need to find the contacts of a client trough the clients name, then you put the contact id key in a client class variable.
-On java 8 this is a bit different, the object of contact would be directly referenced on client class variable.
+On local java 8 algorithms you could reference the object of contact directly on client class variable.
 
 <br/>
 <p align=center>
   <img src="https://github.com/marcosRoos/OO-Study/blob/main/relation.png" title="Relation example"/>
 </p>
+
+<br/> <br/>
+Object Oriented Programming inheritance characteristic means i can extend classes, so i can extend any class ? No! In java 8 a lot of classes can't be extended, String is one of them, this is meant to avoid changes that can break them and to help creating a standard. <br/> 
+
+## final
+This modifier word makes things unchangeable. <br/>
+```
+final String standardErrorMessage = "error 404: could not find what you where searching for";
+```
+This case shows a String that can not be changed later in the code, a constant. <br/> <br/>
+final also works with classes: 
+```
+public final class Dog {
+  public Dog() {}
+} 
+```
+
+## static
+When you want to create a class, not to instantiate an object from it but to use it as a collection of methods, you can use this word to make it acessible.
+```
+public static class Mathemathics {
+  public Mathemathics() {}
+  public static sum(List<Integer> values) {
+    int total = 0;
+    for(int i=0; i<values.size()-1; i++) {
+      total += values.get(i);
+    }
+  }
+}
+
+public void App {
+  public static void main(String[] args) {
+    List<Integer> numbers = new ArrayList();
+    numbers.add(10);
+    numbers.add(20);
+    numbers.add(30);
+    System.out.println( Mathemathics.sum(numbers) );
+  }
+}
+
+```
+Would return:
+```
+60
+```
