@@ -143,8 +143,14 @@ hello world from no one![A]
 hello world from someone![B]
 
 ```
-As you can see, the parent class type does accept the childs instance.
-Java 8 let's you insert a child that have more methods than its parent on the parent, but you would not be able to call those methods.
+As you can see, the parent class type does accept the childs instance. <br/>
+Java 8 let you insert a child that have more methods than its parent on the parent, but you would not be able to call those methods. <br/>
+C++ let you have multiple inheritance, meanwhile java has something called <ins>INTERFACE</ins>, which are like abstract classes, but they have no parameters, only constants and method prototypes (no content on the methods). With interfaces, you can create a child class that extends parent class and implement multiple interfaces.
+
+<br/>
+<p align="center">
+<img src="https://github.com/marcosRoos/OO-Study/blob/main/interface.png" title="interface example"/>
+</p>
 
 ## Relationships
 Relations one-to-one, one-to-many an many-to-many is used on databases to relate data of different classes trough the id key, for example, you can relate a client of yours with n contacts of his (cellphone, enterprise phone, email, etc..), or an ifood account with multiple adresses for example. If you need to find the contacts of a client trough the clients name, then you put the contact id key in a client class variable.
