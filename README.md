@@ -145,7 +145,7 @@ hello world from someone![B]
 ```
 As you can see, the parent class type does accept the childs instance. <br/>
 Java 8 let you insert a child that have more methods than its parent on the parent, but you would not be able to call those methods. <br/>
-C++ let you have multiple inheritance, meanwhile java has something called <ins>INTERFACE</ins>, which are like abstract classes, but they have no parameters, only constants and method prototypes (no content on the methods). With interfaces, you can create a child class that extends parent class and implement multiple interfaces.
+C++ let you have multiple inheritance, meanwhile java has something called <ins>INTERFACE</ins>, which are like abstract classes, but they have no parameters, only constants and method prototypes (no content on the methods). With interfaces, you can create a child class that extends the parent class and implement multiple interfaces.
 
 <br/>
 <p align="center">
@@ -205,3 +205,5 @@ Would return:
 ```
 60
 ```
+
+This was a fast and resumed interpretation of OOP, if you want to know more click <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">here</a>.
